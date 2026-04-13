@@ -6,3 +6,6 @@ langsmith
 pydantic
 dotenv
 streamlit
+langchain-huggingface
+langchain-chroma
+jq

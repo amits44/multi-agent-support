@@ -1,0 +1,102 @@
+[
+  {
+    "id": "bill_001",
+    "question": "I requested a refund but haven’t received it yet. What should I do?",
+    "answer": "Refunds typically take 5-7 business days to process. If it’s been longer, please contact support with your invoice ID."
+  },
+  {
+    "id": "bill_002",
+    "question": "I see two charges for the same purchase. Why did this happen?",
+    "answer": "This is often due to a temporary authorization hold. It usually clears within a few days. If not, reach out to support."
+  },
+  {
+    "id": "bill_003",
+    "question": "Where can I download my billing invoice?",
+    "answer": "You can download all invoices from your account dashboard under the billing or payment history section."
+  },
+  {
+    "id": "bill_004",
+    "question": "My card details have changed. How do I update them?",
+    "answer": "Go to your account settings and update your payment method under the billing section."
+  },
+  {
+    "id": "bill_005",
+    "question": "Why is my card getting declined even though it works elsewhere?",
+    "answer": "This can happen due to bank restrictions, expired cards, or insufficient funds. Try another method or contact your bank."
+  },
+  {
+    "id": "bill_006",
+    "question": "When will the next payment be deducted?",
+    "answer": "Your payment is automatically deducted on your subscription renewal date each billing cycle."
+  },
+  {
+    "id": "bill_007",
+    "question": "If I cancel today, will I still be charged?",
+    "answer": "No further charges will occur after cancellation, but you will retain access until the end of your current billing period."
+  },
+  {
+    "id": "bill_008",
+    "question": "Do you refund unused days if I cancel mid-month?",
+    "answer": "We generally do not offer prorated refunds unless required by policy or under special circumstances."
+  },
+  {
+    "id": "bill_009",
+    "question": "I forgot to apply my coupon. Can it be added after payment?",
+    "answer": "Discount codes usually need to be applied before payment. Contact support to check if an adjustment is possible."
+  },
+  {
+    "id": "bill_010",
+    "question": "Can I pay in INR instead of USD?",
+    "answer": "Yes, we support multiple currencies based on your region. Pricing will automatically adjust at checkout."
+  },
+  {
+    "id": "bill_011",
+    "question": "Why is my bill higher than expected this month?",
+    "answer": "Your bill may include taxes, add-ons, or usage beyond your plan limits."
+  },
+  {
+    "id": "bill_012",
+    "question": "How can I upgrade my current plan?",
+    "answer": "You can upgrade anytime from the subscription section in your account settings."
+  },
+  {
+    "id": "bill_013",
+    "question": "Is it safe to store my card details on your platform?",
+    "answer": "Yes, we use secure encryption and industry-standard practices to protect your payment information."
+  },
+  {
+    "id": "bill_014",
+    "question": "I was charged by mistake. Can I get my money back?",
+    "answer": "Please contact support with transaction details. Refund eligibility will be reviewed on a case-by-case basis."
+  },
+  {
+    "id": "bill_015",
+    "question": "How do I turn off automatic renewal?",
+    "answer": "You can disable auto-renewal from your subscription settings at any time."
+  },
+  {
+    "id": "bill_016",
+    "question": "I canceled my subscription but still got charged. Why?",
+    "answer": "This usually happens if cancellation was made after the renewal date. Please verify your cancellation timestamp."
+  },
+  {
+    "id": "bill_017",
+    "question": "Do you provide GST-compliant invoices for Indian users?",
+    "answer": "Yes, GST invoices are available if you add your GST details in the billing section."
+  },
+  {
+    "id": "bill_018",
+    "question": "How can I reach your billing support team?",
+    "answer": "You can contact billing support via email or through the help section in your account dashboard."
+  },
+  {
+    "id": "bill_019",
+    "question": "Can I switch from monthly to yearly billing?",
+    "answer": "Yes, you can change your billing cycle anytime from your subscription settings."
+  },
+  {
+    "id": "bill_020",
+    "question": "What happens if my payment fails multiple times?",
+    "answer": "We retry failed payments automatically. If all retries fail, your account may be temporarily suspended."
+  }
+]
