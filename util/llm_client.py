@@ -76,3 +76,26 @@ class LLMClient:
                 "stop_reason": "error"
             }
 
+    def classify_query(
+            self,
+            query:str,
+            categories: List[str]
+    )-> str:
+        
+        category_list= ", ".join(categories)
+        prompt = f"""Classify this customer support query into exactly ONE of these categories: {category_list} Query: "{query}"
+                Respond with ONLY the category name, nothing else."""
+        
+        system = "You are a query classification system. Always respond with exactly one category name."
+
+        response= self.generate_response(
+            system_prompt = system,
+            user_message= prompt,
+            temperature = 0.3
+        ) 
+        category = response.strip().lower()
+        if category not in category_list:
+            print(f"warning unexpected query{category} defaulting to general")
+            return "general"
+        
+llm_client = LLMClient()
