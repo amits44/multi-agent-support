@@ -5,7 +5,7 @@ from util.llm_client import llm_client
 from util.prompts import GENERAL_AGENT_SYSTEM_PROMPT, get_escalation_msg
 from config import config
 from langchain_core.vectorstores import InMemoryVectorStore
-from langchain_huggingface import HuggingFaceEmbeddings 
+#from langchain_huggingface import HuggingFaceEmbeddings 
 
 class GeneralAgent:
 
@@ -44,9 +44,9 @@ class GeneralAgent:
                 doc = documents(
                     page_content = text,
                     metadata={
-                        'id': item.get('id','')
-                        'category': item.get('category','')
-                        'question': item.get('question','')
+                        'id': item.get('id',''),
+                        'category': item.get('category',''),
+                        'question': item.get('question',''),
                         'answer': item.get('answer','')
                     }
                 )
