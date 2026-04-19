@@ -87,6 +87,33 @@ class GeneralAgent:
     
     def _keyword_search(self, query:str, top_k: int =3):
         if not self.knowledge_base:
-            return None
+            return []
+        query_lower = query.lower()
+        query_words = set(query_lower.split())
+        
+        scored_items = []
+        for item in self.knowledge_base:
+            score = 0
+            
+            question_lower = item.get('question', '').lower()
+            if any(word in question_lower for word in query_words):
+                score += 2
+            
+            answer_lower = item.get('answer', '').lower()
+            if any(word in answer_lower for word in query_words):
+                score += 1
+            
+            keywords = item.get('keywords', [])
+            if any(keyword in query_lower for keyword in keywords):
+                score += 3
+            
+            if score > 0:
+                scored_items.append((score, item))
+        
+        scored_items.sort(reverse=True, key=lambda x: x[0])
+        results = [item for score, item in scored_items[:top_k]]
+        
+        print(f" Found {len(results)} items via keyword search")
+        return results
         
 
